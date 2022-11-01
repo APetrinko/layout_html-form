@@ -3,7 +3,9 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, 
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
@@ -11,55 +13,53 @@
 
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
-  method="post">
+      method="post"
+    >
       <fieldset class="form-field">
         <legend>Personal information</legend>
         <label class="input">
         Surname:
           <input 
-        type="text" 
-        name="surname" 
-        autocomplete="off" 
-        required
+            type="text" 
+            name="surname" 
+            autocomplete="off" 
+            required
           >
         </label>
 
         <label class="input">
         Name:
           <input 
-          type="text" 
-          name="name" 
-          autocomplete="off" 
-          required
+            type="text" 
+            name="name" 
+            autocomplete="off" 
+            required
           >
         </label>
 
         <label class="input">
         How old are You?
           <input 
-        type="number" 
-        name="age" 
-        value="12" 
-        min="1" 
-        max="100" 
-        required
+            type="number" 
+            name="age" 
+            value="12" 
+            min="1" 
+            max="100" 
+            required
           >
         </label>
 
         <label class="input">
         Full date of birth:
-          <input 
-        type="date" 
-        name="dateOfBirth"
-          >
+          <input type="date" name="dateOfBirth">
         </label>
 
         <label class="input">
         I accept the term of the agreement
           <input 
-        type="checkbox" 
-        name="term" 
-        required
+            type="checkbox" 
+            name="term" 
+            required
           >
         </label>
       </fieldset>
@@ -69,64 +69,55 @@
         <label class="input">
         E-mail:
           <input 
-        type="email"
-        name="email"
-        placeholder="email@example.com" 
-        required
+            type="email"
+            name="email"
+            placeholder="email@example.com" 
+            required
           >
         </label>
 
         <label class="input">
         Password:
           <input 
-        type="password" 
-        name="password" 
-        minlength="5" 
-        maxlength="32" 
-        autocomplete="off"
-        required
+            type="password" 
+            name="password" 
+            minlength="5" 
+            maxlength="32" 
+            autocomplete="off"
+            required
           >
         </label>
       </fieldset>
 
       <fieldset class="form-field">
         <legend>An interesting fact about you!</legend>
-        <div class="input">
         Do you love cats?
-
-          <label>
-            <input 
-           type="radio"
-           name="cats" 
-           value="yes"
-            >
+        <label>
+          <input 
+            type="radio"
+            name="cats" 
+            value="yes"
+          >
           Yes
-          </label>
+        </label>
 
-          <label>
-            <input 
-          type="radio" 
-          name="cats" 
-          value="no"
-            >
+        <label>
+          <input 
+            type="radio" 
+            name="cats" 
+            value="no"
+          >
           No
-          </label>
-        </div>
+        </label>
 
         <label class="input">
         What is your favorite color?
-          <input
-         type="color" 
-         name="color"
-          >
+          <input type="color" name="color">
         </label>
 
         <label class="input">
         What time do you go to bed?
-          <input 
-        type="time" 
-        name="time"
-          >
+          <input type="time" name="time">
         </label>
 
         <label class="input">
@@ -141,17 +132,17 @@
         <label class="input">
         How do you rate our work?
           <input 
-        type="range"
-         name="rating" 
-         value="1" 
-         min="1" 
-         max="10" 
-         step="1"
+            type="range"
+            name="rating" 
+            value="1" 
+            min="1" 
+            max="10" 
+            step="1"
           >
         </label>
       </fieldset>
 
-      <fieldset class="fieldset">
+      <fieldset class="form-field">
         <legend>Additional info:</legend>
         <label class="input">
         Comments:
@@ -167,7 +158,9 @@
         </label>
       </fieldset>
 
-      <button type="submit">Submit</button>
+      <label class="form-field">
+        <button type="submit">Submit</button>
+      </label>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
