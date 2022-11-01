@@ -5,5 +5,9 @@
 
 .input {
   display: block;
-  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input:last-child {
+  margin-bottom: 0;
 }
