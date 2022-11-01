@@ -1,13 +1,13 @@
 /* styles go here */
-.form-field {
+.infoBlock {
   margin-bottom: 20px;
 }
 
-.input {
+.form-field {
   display: block;
   margin-bottom: 10px;
 }
 
-.input:last-child {
+.form-field:last-child {
   margin-bottom: 0;
 }
